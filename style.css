@@ -1,15 +1,92 @@
+@font-face { font-family: "Matimo-Black"; src: url("fonts/matimo-black.ttf"); }
+@font-face { font-family: "Square-bold"; src: url("fonts/square-bold.otf"); }
+
 .header{
-    height: 100px;
-    background-color: red;
+    height: 70px;
+    background-color: #293133;;
     display: flex;
     flex-direction: row;
-}
-.logo{
-    width: 100px;
-    height: 100px;
+    border-radius: 10px;
 }
 
 .logoD{
+    margin: auto;
+}
+.logo{
+    height: 70px;
+    align-items: center;
+}
+
+.link_logo{
     display: flex;
     flex-direction: row;
+    font-family: "Matimo-Black";
+    color: #78DBE2;
+    align-items: center;
+    text-decoration: none;
+}
+
+.link_text{
+    margin-top: 5px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body{
+    background-color: #B5B8B1;
+}
+
+main{
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 10px;
+    height: 100vh;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project_link{
+    font-family: "Square-bold";
+    font-size: 10pt;
+    text-decoration: none;
+    color: #E32636;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.project_img{
+    border-radius: 10px;
+    width: 200px;
+    height: 133px;
+    
+}
+
+.project{
+    width: 200px;
+    height: 204px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.our_division{
+    font-family: "Square-bold";
+    font-size: 10pt;
+    background-color: #A8E4A0;
+    color: #293133;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
