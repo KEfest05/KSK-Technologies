@@ -1,80 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Javascript Calculator - Version 1.0</title>
-    <style>
-        #calculator {
-            width: 300px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            text-align: center;
-        }
-
-       #calculator button {
-            width: 60px;
-            height: 60px;
-            font-size: 18px;
-            margin: 5px;
-            cursor: pointer;
-        }
-
-        #display {
-            width: 80%;
-            height: 40px;
-            font-size: 24px; /* Настройте размер шрифта в соответствии с вашими предпочтениями */
-            margin: 10px auto;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
-    <h1>Javascript Calculator</h1>
-    <p>Auteur: Larbi OUIYZME</p>
-    <p>Version: 1.0</p>
-    <div id="calculator">
-        <input type="text" id="display" disabled>
-        <br>
-        <button onclick="addToDisplay('7')">7</button>
-        <button onclick="addToDisplay('8')">8</button>
-        <button onclick="addToDisplay('9')">9</button>
-        <button onclick="addToDisplay('+')">+</button>
-        <br>
-        <button onclick="addToDisplay('4')">4</button>
-        <button onclick="addToDisplay('5')">5</button>
-        <button onclick="addToDisplay('6')">6</button>
-        <button onclick="addToDisplay('-')">-</button>
-        <br>
-        <button onclick="addToDisplay('1')">1</button>
-        <button onclick="addToDisplay('2')">2</button>
-        <button onclick="addToDisplay('3')">3</button>
-        <button onclick="addToDisplay('*')">*</button>
-        <br>
-        <button onclick="addToDisplay('0')">0</button>
-        <button onclick="clearDisplay()">C</button>
-        <button onclick="calculateResult()">=</button>
-        <button onclick="addToDisplay('/')">/</button>
-    </div>
+    <header class="header">
+        <div class="logoD">
+            <a href="index.html"><img class="logo" src="img/logo1_noneText.png" alt=""></a>
+            <div>KSK Technologies</div>
+        </div>
+        <nav class="nav"></nav>
+    </header>
 
-    <script>
-        // Эта функция используется для добавления конкретного "value" (значения) на дисплей.
-  function addToDisplay(value) {
-            document.getElementById('display').value += value;
-        }
-        // Эта функция очищает дисплей, устанавливая его значение в пустую строку.
-        function clearDisplay() {
-            document.getElementById('display').value = '';
-        }
-        // Эта функция вычисляет результат выражения на дисплее с помощью функции 'eval'.
-        // Она обрабатывает ошибки и выводит сообщение 'Error', если выражение недопустимо.
-        function calculateResult() {
-            try {
-       // Получение результата выражения и вывод результата на дисплей.
-                document.getElementById('display').value = eval(document.getElementById('display').value);
-            } catch (error) {
-       // Если в процессе вычисления возникла ошибка, на дисплее отобразится сообщение 'Error'.
-                document.getElementById('display').value = 'Error';
-            }
-        }
-    </script>
+    <main class="main">
+        <a href="power_supply.html">Регулируемый блок питания</a>
+    </main>
+
+    <footer class="footer"></footer>
 </body>
+<script src="script.js"></script>
 </html>
