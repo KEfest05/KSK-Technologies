@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>KSK Technologies</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logoD">
+            <a class="link_logo" href="../../index.html">
+                <img class="logo" src="../../img/logo1_noneText.png" alt="">
+                <div class="link_text">
+                    <div>KSK</div>
+                    <div>Technologies</div>
+                </div>
+            </a> 
+        </div>
+        <nav class="nav"></nav>
+    </header>
+
+    <main>
+        <div class="main">
+            <div class="widthBlock">
+                <label for="width">Ширина(мм):</label>
+                <input class="num" type="number" name="namber" id="width" value="0">
+            </div>
+            
+            <div class="lengthBlock">
+                <label for="length">Длина(мм):</label> &nbsp;
+                <input class="num" type="number" name="namber" id="length" value="0">
+            </div>
+
+            <button onclick="calculate()" class="calculate">Вычислить</button>
+            <output id = "result"></output>
+        </div>
+    </main>
+
+    <footer class="footer"></footer>
+</body>
+<script src="script.js"></script>
+</html>
