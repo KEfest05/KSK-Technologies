@@ -1,9 +1,6 @@
-@font-face { font-family: "Matimo-Black"; src: url("../../fonts/matimo-black.ttf"); }
-@font-face { font-family: "Square-bold"; src: url("../../fonts/square-bold.otf"); }
+@font-face { font-family: "Matimo-Black"; src: url("../fonts/matimo-black.ttf"); }
+@font-face { font-family: "Square-bold"; src: url("../fonts/square-bold.otf"); }
 
-/* body{
-    font-family: "Matimo-Black";
-} */
 .header{
     height: 70px;
     background-color: #293133;;
@@ -45,52 +42,15 @@ main{
     margin-top: 50px;
     background-color: white;
     border-radius: 10px;
-    height: 100%;
+    height: 100vh;
 }
 .main{
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    font-family: "Square-bold";
-    
-}
-
-.LabelBlock{
-    font-size: 10pt;
-    width: 702px;
-    display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
-
-
-@media screen and (max-width: 425px) {
-    #schem{
-        width: 300px;
-        height: 300px;
-    }
-    #Up{
-        width: 300px;
-        height: 240px;
-    }
-    #Down{
-        width: 300px;
-        height: 240px;
-    }
-
-    .imgBlock{
-        width: 300px;
-    }
-
-    .main{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-    }
+    flex-wrap: wrap;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .project_link{
@@ -104,22 +64,23 @@ main{
 
 .project_img{
     border-radius: 10px;
-    width: 170px;
-    height: 94px;
+    width: 200px;
+    height: 133px;
     
 }
 
 .project{
-    width: 170px;
-    height: 173px;
+    width: 200px;
+    height: 204px;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     text-align: center;
 }
 
-.text{
+.our_division{
     font-family: "Square-bold";
     font-size: 10pt;
+    background-color: #A8E4A0;
     color: #293133;
     height: 50px;
     text-align: center;
@@ -132,16 +93,15 @@ main{
     justify-content: center;
 }
 
-.discript{
-    background-color: #A8E4A0;
-}
-
-.schem{
-    margin-top: 30px;
-    background-color: #6A5ACD;
-}
-
-.pcb{
-    margin-top: 30px;
-    background-color: #E32636;
+@media screen and (max-width: 425px) {
+    main{
+        margin-top: 50px;
+        background-color: white;
+        border-radius: 10px;
+        height: 100%;
+    }
+    .main{
+        padding: 10px;
+        height: 700px;
+    }
 }
