@@ -22,18 +22,24 @@
 
     <main>
         <div class="main">
-            <div class="widthBlock">
-                <label for="width">Ширина(мм):</label>
-                <input class="num" type="number" name="namber" id="width" value="0">
+            <output id = "result">Перекись: <br> Лимонная кислота: <br> Соль: </output>
+            
+            <div class="LNBlock">
+                <div class="labelBlock">
+                    <label for="width">Ширина(мм):</label>
+                    <label for="length">Длина(мм):</label> 
+                </div>
+    
+                <div class="NumBlock">
+                    <input class="num" type="number" name="namber" id="width" value="0">
+                    <input class="num" type="number" name="namber" id="length" value="0">
+                </div>
             </div>
             
-            <div class="lengthBlock">
-                <label for="length">Длина(мм):</label> &nbsp;
-                <input class="num" type="number" name="namber" id="length" value="0">
-            </div>
+            
 
             <button onclick="calculate()" class="calculate">Вычислить</button>
-            <output id = "result"></output>
+            
         </div>
     </main>
 
