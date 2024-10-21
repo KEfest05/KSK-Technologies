@@ -51,7 +51,7 @@ main{
     flex-wrap: wrap;
 }
 
-.project_link{
+.CardLink_link{
     font-family: "Square-bold";
     font-size: 10pt;
     text-decoration: none;
@@ -60,14 +60,14 @@ main{
     margin-top: 20px;
 }
 
-.project_img{
+.CardLink_img{
     border-radius: 10px;
     width: 170px;
     height: 94px;
     
 }
 
-.project{
+.CardLink{
     width: 170px;
     height: 173px;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
@@ -90,7 +90,7 @@ main{
     justify-content: center;
 }
 
-.our_division{
+.project{
     background-color: #A8E4A0;
 }
 
