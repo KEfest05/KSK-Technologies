@@ -1,7 +1,9 @@
 @font-face { font-family: "Matimo-Black"; src: url("../../fonts/matimo-black.ttf"); }
 @font-face { font-family: "Square-bold"; src: url("../../fonts/square-bold.otf"); }
 
-
+.body{
+    margin: 0px;
+}
 .header{
     height: 70px;
     background-color: #293133;;
@@ -64,46 +66,7 @@ main{
 }
 
 
-@media screen and (max-width: 425px) {
 
-    #Up{
-        width: 300px;
-        height: 240px;
-    }
-    #Down{
-        width: 300px;
-        height: 240px;
-    }
-
-    .imgBlock{
-        width: 300px;
-    }
-
-    .main{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    
-}
-
-@media screen and (max-width: 553px) {
-    .linkBlock{
-        max-width: 350px;
-    }
-    #schem{
-        width: 300px;
-        height: 300px;
-    }
-
-    .link1{
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-}
 
 
 .text{
@@ -172,4 +135,139 @@ main{
 .DDD{
     background-color: #fb8500;
     margin-top: 20px;
+}
+
+.slider{
+    width: 500px;
+    height: 300px;
+    position: relative;
+    float: left;
+}
+
+.image{
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.5s;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.image.active{
+    opacity: 1;
+}
+
+.label{
+    position: absolute;
+    left: 42%;
+    top: 87%;
+    opacity: 0;
+}
+.label.active{
+    opacity: 1;
+}
+
+.controlls{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    font-size: 18pt;
+    transition: font-size 0.5s;
+}
+
+.controlls:hover{
+    font-size: 24pt;
+    cursor: pointer;
+}
+
+
+
+.prev{
+    left: 20px;
+}
+
+.next{
+    right: 20px;
+}
+
+.mDis{
+    min-height: 300px;
+    font-family: "Square-bold";
+    max-width: 100vw;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-around; */
+    padding: 10px;
+
+}
+
+.mDis p{
+    text-align: justify;
+    
+}
+
+@media screen and (max-width: 425px) {
+
+    #Up{
+        width: 300px;
+        height: 240px;
+    }
+    #Down{
+        width: 300px;
+        height: 240px;
+    }
+
+    .imgBlock{
+        width: 300px;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    
+}
+
+@media screen and (max-width: 553px) {
+    .linkBlock{
+        max-width: 350px;
+    }
+    #schem{
+        width: 300px;
+        height: 300px;
+    }
+
+    .link1{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .mDis{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .mDis p{
+        width: 90vw;
+    }
+
+    .slider{
+        width: 300px;
+        height: 180px;
+    }
+
+    .image{
+        width: 180px;
+        height: 119px;
+    }
 }

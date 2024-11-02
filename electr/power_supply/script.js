@@ -15,3 +15,35 @@ printLog(mobileWidthMediaQuery.matches)
 mobileWidthMediaQuery.addEventListener('change', function (event) {
   printLog(event.matches)
 })
+
+const images = document.querySelectorAll(".image");
+const labels = document.querySelectorAll(".label");
+let imageindex = 0;
+
+function show(index){
+    images[imageindex].classList.remove('active');
+    images[index].classList.add('active');
+
+    labels[imageindex].classList.remove('active');
+    labels[index].classList.add('active');
+    imageindex = index;
+}
+
+function prev(){
+    let index = imageindex - 1;
+
+    if(index < 0){
+        index = images.length - 1;
+    }
+
+    show(index)
+}
+
+function next(){
+    let index = imageindex + 1;
+
+    if(index >= images.length){
+        index = 0;
+    }
+    show(index);
+}

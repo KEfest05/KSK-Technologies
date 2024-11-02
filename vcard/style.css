@@ -1,0 +1,109 @@
+@font-face { font-family: "Square-bold"; src: url("../fonts/square-bold.otf"); }
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Square-bold";
+    background: rgb(0,255,255);
+    background: linear-gradient(180deg, rgba(0,255,255,1) 37.2%, rgba(255,255,255,1) 37.2%);
+}
+
+.vcard_body{
+    width: 570px;
+    height: 909px;
+    margin-top: 50px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+}
+
+.vcardUp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 304px;
+    background-color: #00ffff;
+}
+
+
+
+.ButDiv{
+    width: 570px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: black;
+    transition: background-color 0.4s;
+}
+
+.Button:hover{
+    background-color: #06b8b8;
+}
+
+
+.Button div{
+    font-size: 8pt;
+}
+
+.Button img{
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.linkJob{
+    font-size: 7pt;
+}
+
+
+
+.name_famil{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.name{
+    margin-right: 10px;
+}
+
+.topInfo{
+    height: 244px;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+.image{
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+}
+
+.image img{
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.vcardDown{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contentBlock{
+    width: 480px;
+    height: 76px;
+}
