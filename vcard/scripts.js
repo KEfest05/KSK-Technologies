@@ -12,6 +12,6 @@ document.querySelector(".name").innerHTML = name;
 document.querySelector(".famil").innerHTML = famil;
 document.querySelector(".linkJob").innerHTML = link_job;
 // document.querySelector(".Button_call").innerHTML += "<p>call</p>";
-document.querySelector(".Button_call").setAttribute('href', mobile);
+document.querySelector(".Button_call").setAttribute('href', 'tel:${mobile}');
 // document.querySelector(".ButtonMail").innerHTML += "<p>email</p>";
-document.querySelector(".ButtonMail").setAttribute('malito', mail);
+document.querySelector(".ButtonMail").setAttribute('href', "mailto:${mail}");
