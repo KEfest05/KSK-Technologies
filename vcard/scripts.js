@@ -1,7 +1,7 @@
 const name = "Кирилл";
 const famil = "Косткин";
 const name_job = "KSK Technology";
-const link_job = "https://kurl.ru/KSK-Tech";
+const link_job = "https://clk.li/KSK-Tech";
 const mobile = "+79374941499";
 const mail = "kostkin05kirill@gmail.com";
 const telegram = "http://t.me/KEfest";
